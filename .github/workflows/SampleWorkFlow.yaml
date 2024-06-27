@@ -15,5 +15,17 @@ jobs:
           run: |
             echo "Installing Dependencies..."
             npm install
+  runPrcoess: 
+      name: RunProcess in 5 sec
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run The RunProcess
+          run: |
+            echo "Running the process..."
+            sleep 5sec
+            echo  "Running the process...2"
+            sleep 5sec
+            echo "Running the process...3"
+
         
       
