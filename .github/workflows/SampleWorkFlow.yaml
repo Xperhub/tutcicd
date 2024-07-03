@@ -15,6 +15,12 @@ jobs:
           run: |
             echo "Installing Dependencies..."
             npm install
+        - name: Running Linting 
+          run: |
+            echo  "Running Linting test..."
+            npm run lint
+          env:  
+            CI: true
   runPrcoess: 
       name: RunProcess in 5 sec
       runs-on: ubuntu-latest
@@ -22,9 +28,9 @@ jobs:
         - name: Run The RunProcess
           run: |
             echo "Running the process..."
-            sleep 5sec
+            sleep 5s;
             echo  "Running the process...2"
-            sleep 5sec
+            sleep 5s;
             echo "Running the process...3"
 
         
